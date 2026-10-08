@@ -1,0 +1,10 @@
+B.  A negative pixel value in an image indicated the pixel is actually derived from a mathematical operation. \\
+This could happen from an operation such as: img1 - img2, where the pixel value in img2 is greater than img1.\\
+This could represent the difference in pixel between the two images.\\
+
+---\\
+
+I. This is important to preserve these negative pixel values because they can be used to represent the differene in the pixel between two images.\\
+They should not be clipped to 0 because that would result in the destruction of information. \\
+If destroyed, the information if it is slightly negative vs large negative could be lost. \\
+This could be important in finding the difference in frequency of these negative vs positive pixel values. \\
